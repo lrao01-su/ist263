@@ -12,8 +12,8 @@ h2{color:#a22652;}
 nav {background-color: #00aeef;
     padding:10px;
     margin-bottom: 30px;}
-nav a{color: #a22652;}
-nav a:hover{background-color: #d15abd;}
+nav a{color: #f78db2;}
+nav a:hover{background-color: #db18bb;}
 @media only screen and (max-width: 768px){
     nav a {display: block; line-height: 2em;}
     span {display: none;}
@@ -21,7 +21,7 @@ nav a:hover{background-color: #d15abd;}
 #skip {
     position: absolute;
     left: -999px;
-    background-color: orange;
+    background-color: rgb(0, 60, 255);
 }
 #skip:focus {
     left: 10px; /*Move the skip back on screen when it's tabbed to*/
