@@ -13,6 +13,7 @@ nav {background-color: #1e5e75;
     padding:10px;
     margin-bottom: 30px;}
 nav a{color: #ffffff;}
+span {color:#ffffff}
 nav a:hover{background-color: #180e01;}
 @media only screen and (max-width: 768px){
     nav a {display: block; line-height: 2em;}
