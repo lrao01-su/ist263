@@ -7,12 +7,12 @@ body {
     color: #070707;
 }
 p a{color:#ef8300}
-h1{color: #4357a0;}
+h1{color: #7086d7;}
 h2{color:#a22652;}
 nav {background-color: #2782a3;
     padding:10px;
     margin-bottom: 30px;}
-nav a{color: #f78db2;}
+nav a{color: #ffffff;}
 nav a:hover{background-color: #db8718;}
 @media only screen and (max-width: 768px){
     nav a {display: block; line-height: 2em;}
