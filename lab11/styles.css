@@ -7,13 +7,13 @@ body {
     color: #070707;
 }
 p a{color:#ef8300}
-h1{color: #7086d7;}
+h1{color: #384574;}
 h2{color:#a22652;}
-nav {background-color: #2782a3;
+nav {background-color: #1e5e75;
     padding:10px;
     margin-bottom: 30px;}
 nav a{color: #ffffff;}
-nav a:hover{background-color: #db8718;}
+nav a:hover{background-color: #180e01;}
 @media only screen and (max-width: 768px){
     nav a {display: block; line-height: 2em;}
     span {display: none;}
