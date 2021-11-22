@@ -10,6 +10,9 @@ nav{
 nav a{
     color:#000407;
 }
+span{
+    color:#000000;
+}
 nav a:hover{background-color:#ffffff;}
 body{
     background-color: #000407;
@@ -23,7 +26,7 @@ h1 {
 }
 h2{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: lightsalmon;
+    color: #b1512b;
     font-size: 2em;
 }
 footer{
