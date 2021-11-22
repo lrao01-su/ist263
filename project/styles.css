@@ -72,3 +72,11 @@ img{
     }
     h1{font-size: 2em;}
 }
+#skip {
+    position: absolute;
+    left: -999px;
+    background-color: rgb(217, 218, 221);
+}
+#skip:focus {
+    left: 10px; /*Move the skip back on screen when it's tabbed to*/
+}
