@@ -3,27 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name ="viewport" content="width=device-width,initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container1 {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin:2em;
+            flex-wrap: wrap;
+        }
+        .text_image{
+            position:absolute;
+            top:80%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .right_login{
+            float:right;
+            text-align: center;
+        }
+        .about{
+            padding:2em;
+            color:rgb(0, 0, 0);
+            background-color:rgb(235, 250, 252);
+            border-radius: 1em;
+            margin: 4em;
+            justify-content: space-evenly;
+        }        
+        .container2{
+            display:flex;
+        }
+        .column2{
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .container2 p{ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+       .container3 {display: flex;
+        flex-wrap: wrap;}
+       .column3{
+           justify-content:space-evenly;
+       }
+       .column3 h3{
+           text-align: center;
+       }
+
+    </style>
 </head>
 <body>
+    <header>
+    <img src="images/uhave_logo.png" alt="uhave logo">
+    </header>
     <nav>
         <a href="home.html">Home</a> <span>|</span>
         <a href="system.html">System</a> <span>|</span>
         <a href="upload.html">UPload</a> 
-        
+        <a class="right_login">Login</a> 
     </nav>
-    <img src="images/uhave_logo.jpeg" alt="uhave_logo">
-    <h1>UHAVE & BAIWANZHUANG</h1>
-    <header><img src="images/bwz_halfcollage.png" alt="bwz_imag"></header>
+    <div class="container1">
+    <div class="text_image"><h1>UHAVE & BAIWANZHUANG</h1></div>
+    <img src="images/bwz_halfcollage.png" alt="baiwanzhuang contrast collage">
+    </div>
     <main>
-        <article>
+        <article class="about">
         <h2>About Baiwanzhaung</h2>
+    <div class="container2">
+       
+        <img src="images/bwz_map.png" alt="map location">
+        
+        <div class="column2">
         <p>
             Located in the west district of Beijing, Million town is the first ever designed and built community socialhousing in the People’s republic of China in 1953. It once had the highest qualitied apartment units
             tailored to house intellectuals, with similar education level and family sizes selected by the government
-            from different parts of the country, to come and resident in the capital city for work convenience. This
-            project served as a prototype of communal living that many neighborhoods residence followed to
+            from different parts of the country, to come and resident in the capital city for work convenience.
+            <br>
+            This project served as a prototype of <b>communal living</b> that many neighborhoods residence followed to
             develop, creating residential blocks that had close neighborhood bonds.
             Nevertheless, as time passes, Million town is currently a near obsolete residential block, that the
             government considered to demolish and reform but decided to keep due to its historical value. Most
@@ -31,43 +89,56 @@
             school. The main issue is that the community lacks order and management. Waste, used furniture and
             building materials are dumped in public areas, some ground level residents even excavated the land for
             gardening. With no regulation privatizing the limited public space created safety hazards and disturbs
-            the living of other residents.
+            the living of other residents.<br>
+            <em>Where is the future of Baiwanzhuang community?</em>
         </p>
-        <img src="images/bwz_map.jpeg" alt="bwz location" width="400">
-        </article>
-
-        <aside>
-            <h2>A Sustainable Baiwanzhaung with UHAVE</h2>
+    </div>
+        </article> 
+        </div>
+        
+        <section>
+            <h2>A Sustainable Baiwanzhaung with UHAVE</h2> 
             <p>
                 To bring a better future, UHAVE has joined to bring equity and liveliness back to this neighborhood with
-                the help of technology and the internet. UHAVE will facilitate Million town to once again become the
+                the help of technology and the internet.<br>
+                UHAVE will facilitate Million town to once again become the
                 innovative model of an environmentally friendly and technology embraced open community.
             </p>
-        </aside>
-        <aside><img src="images/bwz_drone.png" alt="uhave_drone"></aside>
+        
+        <div class="container3">
+        <div class="column3">
         <h3>How UHAVE Helps</h3>
             <ol> 
-                <li>drones will be sent out by UHAVE to first detect waste and occupied public zones</li>
-                <li>Scan abandoned objects in the public space</li>
-                <li>Upload image and information of objects</li>
+                <li>drones will be sent out to detect occupied public zones</li>
+                <li>Scan abandoned objects/waste in the public space</li>
+                <li>Upload image and information about scanned objects</li>
             </ol>
-            <p>
+        </div>
+        <aside><img src="images/bwz_drone.png" alt="done scanning"></aside>
+        </div>
+        <div class="stage_text">
+        <p> 
                 During the beginning stage of the community transition to the IDEAL plan, drones will be sent out by
                 UHAVE to first detect waste and occupied public zones, then scan the objects and finally
                 upload information about these unwanted objects. (Clothes, furniture, garbage……)
                 Residents will have the option to either give up these uploaded properties for the community to recycle
                 and reuse or remove these objects from the public space and exchange it with other residents that has
                 messaged.
-            </p>
-            <img src="images/bwz_finalaxonlarge.png" alt="bwz_final" width="800">
+        </p>
+        </div>
+        <img src="images/bwz_finalaxonlarge.png" alt="three stages">
+    </section>  
     </main>
+
+    <hr>
     <footer>
-        <hr>
-        &copy; HAVE 2021
-        <br>
-        <p> NO.22 Trillion Town Rd,West City</p>
-        <p>Beijing</p>
-        <p>10037</p>
-        </footer>
+    &copy; HAVE 2021
+    <br>
+     NO.22 Trillion Town Rd,West City
+     <br>
+    Beijing
+    <br>
+    10037
+    </footer>
 </body>
 </html>
