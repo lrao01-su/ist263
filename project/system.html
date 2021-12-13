@@ -6,39 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UHAVE System</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <style>
+        .title1{
+            text-align: center;
+        }
+        .image1{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        .right_login{
+            float:right;
+            text-align: center;
+        }
+    
+        .text1{
+            text-align: center;
+            margin: 4em;
+            border-radius: 1em;
+            padding: 2em;
+            background-color: rgb(168, 240, 250);
+            color: #000000;
+        }
+        .title2{ 
+            text-align: center;
+        }
+        .waste_images{
+            display: flex;
+            justify-content: space-evenly;
+            margin: 2em;
+            padding: 2em;
+        }
+        .recycle_diagram{
+            background-color: #FFFFFF;
+            border-radius: 1em;
+        }
+        .setup_diagram{
+            background-color: #FFFFFF;
+            border-radius: 1em;
+        }
+        .title3{
+            text-align: center;
+        }
+        .handbook_group{
+            margin: 4em;
+        }
+        .text3{
+            text-align: center;
+            border-radius: 1em;
+            padding: 2em;
+            background-color: rgb(168, 240, 250);
+            color: #000000;
+        }
+    </style>
 </head>
 <body>
     <a id="skip" href="#content">Skip to Content</a>
     <header>
     <img src="images/uhave_logo.png" alt="uhave logo">
     </header>
-        <nav>
-            <a href="home.html">Home</a> <span>|</span>
-            <a href="system.html">System</a> <span>|</span>
-            <a href="upload.html">UPload</a> 
-        </nav>
+    <nav>
+        <a href="home.html">Home</a> <span>|</span>
+        <a href="system.html">System</a> <span>|</span>
+        <a href="upload.html">UPload</a> 
+        <a class="right_login">Login</a> 
+    </nav>
     <main> 
-        <img src="images/bwz_uploaddiagram.png" alt="uhave_system" width="800">
-        <h1>U HAVE WE HAVE</h1>
-        <p>The shared future starts with us being sustainable with the limited resources and spaces that we have now! Join the UHAVE events to start learning about what we are doing to promote a more connected and clean community.</p>
+        <img src="images/bwz_uploaddiagram.png" alt="uhave_system" width="800" class="image1">
+        <h1 class="title1">U HAVE WE HAVE</h1>
+        <p class="text1">The shared future starts with us being sustainable with the limited resources and spaces that we have now!<br>
+        <b>Join UHAVE to learn about Recycle & Reuse</b>
+        </p>
         <article>
-        <h3>The waste that could be used</h3>
+        <h2 class="title2">Construct New Space with Waste Materials</h2>
         <p>More than 80% of the waste dumps that are currently scattered around corners of the community consist of reusable furniture, abandoned wood and steel panels from the apartment refurnishing process happening within many units. However, while the interior of the apartment might be transformed to better fit the current need and bring a more comfortable living space for individual families, the overall environment of the community, is baring the negative externalities of having the limited public spaces become unhygienic dump heaps that could have been playgrounds for the children, relaxing green space for the public.</p>
+        <div class="waste_images">
         <img src="images/bwz_wood.png" alt="bwz wood" width="300">
         <img src="images/bwz_sidetrash.png" alt="bwz trash" width="300">
         <img src="images/bwz_cars.png" alt="waste space" width="300">
+        </div>
         </article>
         <section>
         <p>
             Partnering with the local construction firm, we now have the option to turn this waste into public utilities that would become added welfare for the general public. Residents or the drones would upload unused objects onto the UHAVE digital platform for recycling or exchanging. The construction team will collect these materials and recycle any paper, wood or steel materials by compression to become construction materials again. The community will have all the wood elements and the construction firm will take the steel materials in return for their effort. The regenerated wood panels would become components that the community could use as a whole to build infrastructure or facilities such as benches, playgrounds or sheds. These infrastructures are temporary and could be moved or reorganized to become other elements based on the needs of individuals.
         </p>
-        <img src="images/bwz_recycle.png" alt="wood recycle" width="800">
+        <img src="images/bwz_recycle.png" alt="wood recycle" class="recycle_diagram">
         </section>
-        <aside>
-            <h2> Building Handbook </h2>
-            <img src="images/bwz_woodsetup.png" alt="handbook" width="800">
-            <p>
-                With the handbook instructions, residents could apply for prototyped wood panels and construct utilities or facilities that for public recreational and relexation purposes. Together everyone will participate in building the future looks for the community with the recycled material."
+        <aside class="handbook_group">
+            <h2 class="title3"> Building Handbook </h2>
+            <img src="images/bwz_woodsetup.png" alt="handbook" class="setup_diagram">
+            <p class="text3">
+                With the handbook instruction, residents can exchange waste materials for prototyped wood panels. Assemble them and construct utilities or facilities for public recreation. <br>
+                <b>Together everyone can participate in building new spaces in the community with recycled materials.</b>
             </p>
         </aside>
     </main>
