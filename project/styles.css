@@ -38,9 +38,13 @@ footer{
 header{
     margin:2em;
 }
-section{
-    margin: 4em;;
+article{
+    margin:4em;
 }
+section{
+    margin: 4em;
+}
+
 p{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 110%;
