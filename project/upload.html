@@ -11,23 +11,205 @@
     <a id="skip" href="#content">Skip to Content</a>
     <header>
     <img src="images/uhave_logo.png" alt="uhave logo">
+    <style>
+        .title1{
+            padding: 2em;
+            text-align: center;
+        }
+        .title1 img{
+            background-color: #FFFFFF;
+            border-radius: 1em;
+        }
+        form{
+            width: fit-content;
+        }
+        .info_text{
+            background-color: #b1512b;
+            padding: 2em;
+            margin: 2em;
+            border-radius: 1em;
+            width: fit-content;
+            text-align: center;
+        }
+        .title2{
+            text-align: center;
+            margin: 2em;
+        }
+        .card1{
+            border-radius: 1em;
+            background-color: blanchedalmond;
+            color:black;
+            display: inline-block;
+            width: 75%;
+            max-width: 20rem;
+            padding: 1em;
+            height: 600px;
+            margin: 1rem;
+            font-size: 1rem;
+            text-decoration: none;
+            overflow: hidden;
+        }
+        /*constrain image width and height to fit in the card*/
+        .card_set img{
+            height:330px;
+            width: 320;
+        }
+        /* hover shadow effect for cards */
+        .card1:hover {
+            transform: translateY(-0.5rem) scale(1.0125);
+            box-shadow: 0 0.5em 3rem -1rem rgba(255, 255, 255, 0.781);
+                    }
+        .obj_text{
+            display: block;
+            padding: 1em 0.5em;
+        }
+        .obj_img{
+            display: block;
+            width:100%;
+        }
+        .card_set{
+            display: block;
+            margin: 2rem auto;
+            padding: 0;
+            font-size: 0;
+            text-align: center;
+            list-style: none;
+        }
+        .title3{
+            margin: 2em;
+            text-align: center;
+
+        }
+        .image3{
+            background-color: rgb(253, 246, 235);
+            border-radius: 1em;
+            padding: 2em;
+        }
+        .playground_text{
+            background-color:#b1512b;
+            border-radius: 1em;
+            padding: 2em;
+        }
+        /*Format card layout for large screen*/
+        @media only screen and (min-width: 800px){
+        .card1{
+        border-radius: 1em;
+        background-color: blanchedalmond;
+        color:black;
+        display: inline-block;
+        width: 90%;
+        max-width: 20rem;
+        padding: 1em;
+        height: 600px;
+        margin: 10rem;
+        font-size: 1rem;
+        text-decoration: none;
+        overflow: hidden;
+            }
+        }       
+        .button {
+            font-size: 2em;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            border-radius: 5px;
+            background-color: #3fc9d8;
+            cursor: pointer;
+            padding: 6px;
+            color: #000000;
+        }
+        #modal {
+            position: absolute;
+            border-radius: 1em;
+            top: 50%;
+            left: 50%;
+            width: 200px;
+            height: 200px;
+            padding: 40px;
+            margin-top: 300px;
+            margin-left: -120px;
+            background-color: #0f1120;
+            box-shadow: 0px 0px 0px 100vw rgb(0,0,0,0.6);
+            display:none;
+        }
+        #closeModal {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .login {
+            cursor: pointer;
+        }
+        #login_modal {
+            border-radius: 5px;
+            position: absolute;
+            top: 5%;
+            left: 40%;
+            width: 300px;
+            height: 180px;
+            padding: 20px;
+            margin-top: -10px;
+            margin-left: -120px;
+            background-color:#0f1120;
+            box-shadow: 0px 0px 0px 100vw rgb(0,0,0,0.6);
+            display:none;
+        }
+        #close_loginModal {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    </style>
+
+    <script>
+        /* add code to open and close upload form */
+        function openModal() {
+            document.getElementById('modal').style.display = 'block';
+        }
+        function closeModal(){
+            document.getElementById('modal').style.display = 'none';
+        }
+        function open_loginModal() {
+            document.getElementById('login_modal').style.display = 'block';
+        }
+        function close_loginModal(){
+            document.getElementById('login_modal').style.display = 'none';
+        }
+    </script>
+
     </header>
     <nav>
+        <div id="navlinks">
         <a href="home.html">Home</a> <span>|</span>
         <a href="system.html">System</a> <span>|</span>
-        <a href="upload.html">UPload</a> 
+        <a href="upload.html">UPload</a> <span>|</span>
+        <a class="login" onclick="open_loginModal();"><b>Login</b></a> 
+        <div id="login_modal">
+            <form>
+                <h2>Login</h2>
+                <label for="username">User Name:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="text" id="password" name="password"><br>
+                <input type="submit" value="Login">
+            </form>
+            <div id="close_loginModal" onclick="close_loginModal();">X</div>
+        </div>
+        </div>
     </nav>
-    
     <main>
+        <div class="title1">
             <h2>Upload & Share</h2>
-            <h3>Renew or Reuse</h3>
-            <img src="images/bwz_share_post.png" alt="uhave upload" width="800">
-        <article> 
-            <h2>UPload</h2>
-            <p>Start today with the simplest move of uploading a photo of any item that you would like to exchange with others. You may also opt to give up the item and our team will come and collect it and soon you will see it bring positive effects back to the community as a structural element for creating new spaces in the community.
+            <img src="images/bwz_share_post.png" alt="uhave upload">
+        </div>
+        <a id="content"></a>
+            <p class="info_text"> <b>Start today with the simplest move of uploading a photo of any item that you would like to exchange with others. You may also opt to give up the item and our team will come and collect it and soon you will see it bring positive effects back to the community as a structural element for creating new spaces in the community.
+            </b>
+            <br>
+            <br>
+            <a class="button" onclick="openModal();">Upload</a>
             </p>
-            <img src="images/bwz_share_post.png" alt="uhave upload" width="800">
-        </article>
+        <div id="modal">
         <form action="mailto:lrao01@syr.edu" method="POST">
             <label for="itemname">Item Name:</label>
             <input type="text" id="itemname" name="itemname1">
@@ -42,25 +224,42 @@
             <br>
             <input type="submit" value="Confirm">
         </form>
-        <h2>Recent list of items for exchange </h2>
-        <ol>
-            <li>
-                <img src="images/bwz_chair.png" alt="chair" width="100">
-                <p>
-                    This sofa is taking up too much space in our apartment, but it is still usable but will need cleaning up. We would like to exchanged it with any excess flower pots. Please comment below if you are interested.
-                </p>
-            </li>
-            <li>
-                <img src="images/bwz_plant.png" alt="potplants" width="100">
-                <p>
-                    These pot plants are created as display here, please feel free to claim one if you want, or enjoy them as a display. If you do take one, please replace it with another samll item that you no longer need, so the our share sytem could go on.
-                </p>
-            </li>
-        </ol>
+        <div id="closeModal" onclick="closeModal();">X</div>
+        </div>
+        <h2 class="title2">Recent list of items for exchange </h2>
+    <ul class="card_set">
+    <li class="card1">
+            <div class="obj_image">
+            <img src="images/bwz_chair.png" alt="chair">
+            </div>
+            <div class="obj_text">
+            <h2>Sofa</h2>
+            <p>
+                This sofa is taking up too much space in our apartment, but it is still usable but will need cleaning up. We would like to exchanged it with any excess flower pots. Please comment below if you are interested.
+            </p>
+        </li>
+
+        <li class="card1">
+            <div class="obj_image">
+            <img src="images/bwz_plant.png" alt="potplants">
+            </div>
+            <div class="obj_text">
+            <h2>Potplant</h2>
+            <p>
+                please feel free to claim a plant if you want, or enjoy them as a display. If you do take one, please replace it with another samll item that you no longer need, so our share sytem could go on.
+            </p>
+            </div>
+        </li>
+    </ul> 
+    <div class="title3">
         <h2> Recent Community creation </h2>
-        <img src="images/bwz_potplant.png" alt="structure1" width="500">
-        <img src="images/wzg_potstructure1.png" alt="structure" width="500">
-        <p>Playground：The wood panels that are supplied from the last recycle process, have been used to create this playground for children to climb on. It also has protective nets and swings for younger kids. Adult supervision is required for children under the age of six.</p>
+        <div class="image3">
+        <img src="images/bwz_potplant.png" alt="structure1">
+        <img src="images/wzg_potstructure1.png" alt="structure">
+        </div>
+        <p class="playground_text">
+            <b>Playground：</b>The wood panels that are supplied from the last recycle process, have been used to create this playground for children to climb on. It also has protective nets and swings for younger kids. Adult supervision is required for children under the age of six.</p>
+    </div>
     </main>
     <hr>
     <footer>
