@@ -24,17 +24,12 @@
             left:50%;
             transform: translate(-50%, -50%);
         }
-        
-        .right_login{
-            float:right;
-            text-align: center;
-        }
         .about{
             padding:2em;
             color:rgb(0, 0, 0);
             background-color:rgb(235, 250, 252);
             border-radius: 1em;
-            margin: 4em;
+            margin: 2em;
             justify-content: space-evenly;
         }        
         .container2{
@@ -58,7 +53,38 @@
        .container2 p{font-family: 'Assistant', sans-serif;
             font-family: 'Signika', sans-serif;}
 
+        .login {
+            cursor: pointer;
+        }
+        #login_modal {
+            border-radius: 5px;
+            position: absolute;
+            top: 5%;
+            left: 40%;
+            width: 300px;
+            height: 180px;
+            padding: 20px;
+            margin-top: -10px;
+            margin-left: -120px;
+            background-color:#0f1120;
+            box-shadow: 0px 0px 0px 100vw rgb(0,0,0,0.6);
+            display:none;
+        }
+        #close_loginModal {
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     </style>
+    <script>
+        function open_loginModal() {
+            document.getElementById('login_modal').style.display = 'block';
+        }
+        function close_loginModal(){
+            document.getElementById('login_modal').style.display = 'none';
+        }
+    </script>
 </head>
 <body>
     <a id="skip" href="#content">Skip to Content</a>
@@ -66,10 +92,23 @@
     <img src="images/uhave_logo.png" alt="uhave logo">
     </header>
     <nav>
+        <div id="navlinks">
         <a href="home.html">Home</a> <span>|</span>
         <a href="system.html">System</a> <span>|</span>
-        <a href="upload.html">UPload</a> 
-        <a class="right_login">Login</a> 
+        <a href="upload.html">UPload</a> <span>|</span>
+        <a class="login" onclick="open_loginModal();"><b>Login</b></a> 
+        <div id="login_modal">
+            <form>
+                <h2>Login</h2>
+                <label for="username">User Name:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="password">Password:</label><br>
+                <input type="text" id="password" name="password"><br>
+                <input type="submit" value="Login">
+            </form>
+            <div id="close_loginModal" onclick="close_loginModal();">X</div>
+        </div>
+        </div>
     </nav>
     <div class="container1">
     <div class="text_image"><h1>UHAVE & BAIWANZHUANG</h1></div>
