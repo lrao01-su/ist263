@@ -3,8 +3,8 @@ nav{
     margin-bottom: 1em;
     padding: 1% 2%;
     text-align:left;
-    margin-left: 4em;
-    margin-right: 4em;
+    margin-left: 2em;
+    margin-right: 2em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 nav a{
@@ -39,10 +39,10 @@ header{
     margin:2em;
 }
 article{
-    margin:4em;
+    margin:2em;
 }
 section{
-    margin: 4em;
+    margin: 2em;
 }
 
 p{
@@ -68,6 +68,7 @@ img{
     nav a {display: block; line-height: 1em;}
     nav {padding: 1em;
         border-radius: 1em;
+        justify-content: space-evenly;
     }
     span {display: none;}
     .container2{
@@ -75,6 +76,7 @@ img{
         flex-wrap: wrap;
     }
     h1{font-size: 2em;}
+    h2{font-size: 1em;}
 }
 #skip {
     position: absolute;
@@ -84,3 +86,4 @@ img{
 #skip:focus {
     left: 10px; /*Move the skip back on screen when it's tabbed to*/
 }
+
